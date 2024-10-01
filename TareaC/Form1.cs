@@ -711,6 +711,57 @@ namespace TareaC
 
         }
 
-       
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Black;
+
+            btnSeno.BackColor = Color.Black;
+            btnSeno.ForeColor = Color.White;
+
+            btnPi.BackColor = Color.Black;
+            btnPi.ForeColor = Color.White;
+
+            btnExponente.BackColor = Color.Black;
+            btnExponente.ForeColor = Color.White;
+
+            btnCubo.BackColor = Color.Black;
+            btnCubo.ForeColor = Color.White;
+
+            button11.BackColor = Color.Black;
+            button11.ForeColor = Color.White;
+
+            btnTangente.BackColor = Color.Black;
+            btnTangente.ForeColor = Color.White;
+
+            btnDividir.BackColor = Color.Black;
+            btnDividir.ForeColor = Color.White;
+
+            btnPorcentaje.BackColor = Color.Black;
+            btnPorcentaje.ForeColor = Color.White;
+
+            btnDos.BackColor = Color.Black;
+            btnDos.ForeColor = Color.White;
+
+            btnCuatro.BackColor = Color.Black;
+            btnCuatro.ForeColor = Color.White;
+
+            btnSeis.BackColor = Color.Black;
+            btnSeis.ForeColor = Color.White;
+
+            btnOcho.BackColor = Color.Black;
+            btnOcho.ForeColor = Color.White;
+
+            btnPunto.BackColor = Color.Black;
+            btnPunto.ForeColor = Color.White;
+
+            btnMenos.BackColor = Color.Black;
+            btnMenos.ForeColor = Color.White;
+
+
+            this.Controls.Remove(btnActualizar);
+
+            this.Height = 330;
+
+        }
     }
 }

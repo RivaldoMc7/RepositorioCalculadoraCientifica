@@ -64,6 +64,7 @@
             this.res2 = new System.Windows.Forms.Label();
             this.btnMas = new System.Windows.Forms.Button();
             this.btnElevadoC = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnIgual
@@ -439,12 +440,23 @@
             this.btnElevadoC.UseVisualStyleBackColor = true;
             this.btnElevadoC.Click += new System.EventHandler(this.btnElevadoC_Click);
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(10, 447);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(602, 50);
+            this.btnActualizar.TabIndex = 40;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(620, 450);
+            this.ClientSize = new System.Drawing.Size(620, 498);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnElevadoC);
             this.Controls.Add(this.btnMas);
             this.Controls.Add(this.res2);
@@ -524,6 +536,7 @@
         private System.Windows.Forms.Label res2;
         private System.Windows.Forms.Button btnMas;
         private System.Windows.Forms.Button btnElevadoC;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
 
