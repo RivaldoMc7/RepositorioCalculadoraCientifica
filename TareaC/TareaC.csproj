@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C73796CC-FE10-4509-A288-311DFF6CA097}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TareaC</RootNamespace>
+    <AssemblyName>TareaC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OPCoseno">
+      <HintPath>ArchivosDlls\OPCoseno.dll</HintPath>
+    </Reference>
+    <Reference Include="OPDiezALA">
+      <HintPath>ArchivosDlls\OPDiezALA.dll</HintPath>
+    </Reference>
+    <Reference Include="OPDividir">
+      <HintPath>ArchivosDlls\OPDividir.dll</HintPath>
+    </Reference>
+    <Reference Include="OPExponente">
+      <HintPath>ArchivosDlls\OPExponente.dll</HintPath>
+    </Reference>
+    <Reference Include="OPLogaritmo">
+      <HintPath>ArchivosDlls\OPLogaritmo.dll</HintPath>
+    </Reference>
+    <Reference Include="OPMultiplicar">
+      <HintPath>ArchivosDlls\OPMultiplicar.dll</HintPath>
+    </Reference>
+    <Reference Include="OPNumeroCuadrado">
+      <HintPath>ArchivosDlls\OPNumeroCuadrado.dll</HintPath>
+    </Reference>
+    <Reference Include="OPNumeroCubo">
+      <HintPath>ArchivosDlls\OPNumeroCubo.dll</HintPath>
+    </Reference>
+    <Reference Include="OPPorcentaje">
+      <HintPath>ArchivosDlls\OPPorcentaje.dll</HintPath>
+    </Reference>
+    <Reference Include="OPPotenciaCualquiera">
+      <HintPath>ArchivosDlls\OPPotenciaCualquiera.dll</HintPath>
+    </Reference>
+    <Reference Include="OPRaiz">
+      <HintPath>ArchivosDlls\OPRaiz.dll</HintPath>
+    </Reference>
+    <Reference Include="OPRaizCualquiera">
+      <HintPath>ArchivosDlls\OPRaizCualquiera.dll</HintPath>
+    </Reference>
+    <Reference Include="OPRaizCubica">
+      <HintPath>ArchivosDlls\OPRaizCubica.dll</HintPath>
+    </Reference>
+    <Reference Include="OPResta">
+      <HintPath>ArchivosDlls\OPResta.dll</HintPath>
+    </Reference>
+    <Reference Include="OPSeno">
+      <HintPath>ArchivosDlls\OPSeno.dll</HintPath>
+    </Reference>
+    <Reference Include="OPSigno">
+      <HintPath>ArchivosDlls\OPSigno.dll</HintPath>
+    </Reference>
+    <Reference Include="OPSuma">
+      <HintPath>ArchivosDlls\OPSuma.dll</HintPath>
+    </Reference>
+    <Reference Include="OPTangente">
+      <HintPath>ArchivosDlls\OPTangente.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
